@@ -1,11 +1,20 @@
 ua-parser-js-helpers
 ====================
 
-Helpful helper methods for the excellent ua-parse-js library. Modelled after the [browser](https://github.com/fnando/browser) gem.
+Helpful helper methods for the excellent [ua-parser-js](https://github.com/faisalman/ua-parser-js) library. Modelled after the [browser](https://github.com/fnando/browser) gem.
 
 ### Requirements
 
-You have to include the [ua-parser-js](https://github.com/faisalman/ua-parser-js]) library as it does all the heavy lifting.
+You have to include the [ua-parser-js](https://github.com/faisalman/ua-parser-js) library as it does all the heavy lifting.
+
+
+```
+<script src="ua-parser.js"></script>
+<script src="browser-detector.js"></script>
+<script>
+  // do stuff
+</script>
+```
 
 ### Usage
 
