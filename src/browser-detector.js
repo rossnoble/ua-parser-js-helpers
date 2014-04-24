@@ -1,8 +1,12 @@
-//
-// Requires UAParser.js
-// https://github.com/faisalman/ua-parser-js
-//
-
+/**
+ *
+ * Create a BrowserDetector instance to test the nature
+ * of the user agent.
+ *
+ * @class BrowserDetector
+ * @constructor
+ *
+ */
 (function (window, undefined) {
 
   'use strict';
@@ -23,63 +27,63 @@
     };
 
     this.isChrome = function () {
-      return browser.name === "Chrome";
+      return browser.name === 'Chrome';
     };
 
     this.isFirefox = function () {
-      return browser.name === "Firefox";
+      return browser.name === 'Firefox';
     };
 
     this.isSafari = function () {
-      return browser.name === "Safari";
+      return browser.name === 'Safari';
     };
 
     this.isIE = function () {
-      return browser.name === "IE";
+      return browser.name === 'IE';
     };
 
     this.isIE7 = function () {
-      return this.isIE() && browser.major === "7";
+      return this.isIE() && browser.major === '7';
     };
 
     this.isIE8 = function () {
-      return this.isIE() && browser.major === "8";
+      return this.isIE() && browser.major === '8';
     };
 
     this.isIE9 = function () {
-      return this.isIE() && browser.major === "9";
+      return this.isIE() && browser.major === '9';
     };
 
     this.isIE10 = function () {
-      return this.isIE() && browser.major === "10";
+      return this.isIE() && browser.major === '10';
     };
 
     this.isIE11 = function () {
-      return this.isIE() && browser.major === "11";
+      return this.isIE() && browser.major === '11';
     };
 
     this.isWindows = function () {
-      return os.name === "Windows";
+      return os.name === 'Windows';
     };
 
     this.isWindowsXP = function () {
-      return this.isWindows && os.version === "XP";
+      return this.isWindows && os.version === 'XP';
     };
 
     this.isWindows7 = function () {
-      return this.isWindows && os.version === "7";
+      return this.isWindows && os.version === '7';
     };
 
     this.isWindows8 = function () {
-      return this.isWindows && os.version === "8";
+      return this.isWindows && os.version === '8';
     };
 
     this.isMac = function () {
-      return os.name === "Mac OS X";
+      return os.name === 'Mac OS X';
     },
 
     this.isChromeOS = function () {
-      return os.name === "Chromium OS";
+      return os.name === 'Chromium OS';
     };
 
     this.isMobile = function () {
