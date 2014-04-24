@@ -1,14 +1,4 @@
-//
-// browserSpec.js
-//
-// public/javascripts/modules/browser.js
-//
-
 describe('Browser Detector', function () {
-
-  beforeEach(function () {
-    //
-  });
 
   describe('web browsers', function () {
     it('should detect chrome correctly', function () {

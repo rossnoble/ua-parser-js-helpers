@@ -37,4 +37,25 @@ All methods return a boolean.
 var detector = new BrowserDetector();
 
 detector.isChrome();
+detector.isFirefox();
+detector.isSafari();
+detector.isIE();
+detector.isIE7();
+detector.isIE8();
+detector.isIE9();
+detector.isIE10();
+detector.isIE11();
+
+detector.isWindows();
+detector.isWindows7();
+detector.isWindows8();
+detector.isMac();
+detector.isChromeOS();
+
+detector.isMobile();
+detector.isTablet();
+detector.isiPad();
+detector.isiPhone();
+detector.isiOS();
+detector.isAndroid();
 ```
