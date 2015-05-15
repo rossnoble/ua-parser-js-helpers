@@ -1,0 +1,70 @@
+html, body {
+  font-family: Helvetica, Arial, sans;
+}
+
+code {
+  font-family: monaco, monospace;
+}
+
+code.block {
+  display: block;
+}
+
+.current-ua {
+  padding: 15px;
+  margin-bottom: 10px;
+  background: #F0F0F0;
+}
+
+.methods {
+  margin-bottom: 40px;
+}
+
+.methods ul {
+  width: calc(100% / 5);
+  float: left;
+}
+
+.column {
+  float: left;
+}
+
+ul li {
+  margin-bottom: 8px;
+}
+
+.test-value {
+  font-size: 14px;
+  padding: 1px 3px;
+  border-radius: 3px;
+}
+
+.true {
+  background-color: #C5E5B5;
+  color: #34840C;
+}
+
+.false {
+  background-color: #FFD8D8;
+  color: #C80000;
+}
+
+.footer {
+  clear: all;
+}
+
+.clearfix {
+  zoom: 1;
+}
+
+.clearfix:before {
+  content: '';
+  display: table;
+  clear: both;
+} 
+
+.clearfix:after {
+  content: '';
+  display: table;
+  clear: both;
+} 

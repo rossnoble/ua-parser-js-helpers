@@ -1,31 +1,7 @@
 <html>
 <head>
   <title>UA Parser JS Helpers</title>
-  <style>
-    html, body {
-      font-family: Helvetica, Arial, sans;
-    }
-
-    code {
-      font-family: monaco, monospace;
-    }
-
-    code.block {
-      display: block;
-    }
-
-    .current-ua {
-      padding: 15px;
-      margin-bottom: 10px;
-      background: #F0F0F0;
-    }
-
-    .methods {
-      padding: 15px;
-      background: #F0F0F0;
-      margin-bottom: 20px;
-    }
-  </style>
+  <link rel="stylesheet" media="all" href="./style.css">
 </head>
 <body>
 
@@ -34,35 +10,54 @@
 </header>
 
 <h3>User Agent</h3>
+
 <code class="block current-ua js-current-ua"></code>
 
 <h3>Methods</h3>
 
-<div class="methods">
-  <div data-method="isChrome" class="ua">
-    <span class="method"><code>isChrome() => </code></span>
-    <span class="test"><code></code></span>
-  </div>
-
-  <div data-method="isFirefox" class="ua">
-    <span class="method"><code>isFirefox() => </code></span>
-    <span class="test"><code></code></span>
-  </div>
+<div class="methods clearfix">
+  <ul>
+    <li class="ua" data-method="isChrome"></li>
+    <li class="ua" data-method="isFirefox"></li>
+    <li class="ua" data-method="isSafari"></li>
+    <li class="ua" data-method="isIE"></li>
+    <li class="ua" data-method="isIE7"></li>
+    <li class="ua" data-method="isIE8"></li>
+    <li class="ua" data-method="isIE9"></li>
+  </ul>
+  <ul>
+    <li class="ua" data-method="isIE10"></li>
+    <li class="ua" data-method="isIE11"></li>
+    <li class="ua" data-method="isWindows"></li>
+    <li class="ua" data-method="isWindowsXP"></li>
+    <li class="ua" data-method="isWindows7"></li>
+    <li class="ua" data-method="isWindows8"></li>
+    <li class="ua" data-method="isMac"></li>
+  </ul>
+  <ul>
+    <li class="ua" data-method="isChromeOS"></li>
+    <li class="ua" data-method="isMobile"></li>
+    <li class="ua" data-method="isTablet"></li>
+    <li class="ua" data-method="isiPhone"></li>
+    <li class="ua" data-method="isiPad"></li>
+    <li class="ua" data-method="isiOS"></li>
+    <li class="ua" data-method="isAndroid"></li>
+  </ul>
 </div>
 
-<footer>
-  <div class="meta">
-    <p>This test page uses the following libraries:</p>
+<footer class="footer">
+  <p>This test page uses the following libraries:</p>
 
+  <ul>
     <li>ua-parser-js v0.7.3</li>
     <li>jquery v2.1.1</li>
     <li>browser-detector v0.1</li>
-  </div>
+  </ul>
 </footer>
 
-<script src="/jquery.min.js"></script>
-<script src="/ua-parser.min.js"></script>
-<script src="/browser-detector.js"></script>
-<script src="/main.js"></script>
+<script src="./jquery.min.js"></script>
+<script src="./ua-parser.min.js"></script>
+<script src="../src/browser-detector.js"></script>
+<script src="./main.js"></script>
 </body>
 </html>
