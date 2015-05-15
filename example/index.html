@@ -1,0 +1,68 @@
+<html>
+<head>
+  <title>UA Parser JS Helpers</title>
+  <style>
+    html, body {
+      font-family: Helvetica, Arial, sans;
+    }
+
+    code {
+      font-family: monaco, monospace;
+    }
+
+    code.block {
+      display: block;
+    }
+
+    .current-ua {
+      padding: 15px;
+      margin-bottom: 10px;
+      background: #F0F0F0;
+    }
+
+    .methods {
+      padding: 15px;
+      background: #F0F0F0;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>UA Parser JS Helpers</h1>
+</header>
+
+<h3>User Agent</h3>
+<code class="block current-ua js-current-ua"></code>
+
+<h3>Methods</h3>
+
+<div class="methods">
+  <div data-method="isChrome" class="ua">
+    <span class="method"><code>isChrome() => </code></span>
+    <span class="test"><code></code></span>
+  </div>
+
+  <div data-method="isFirefox" class="ua">
+    <span class="method"><code>isFirefox() => </code></span>
+    <span class="test"><code></code></span>
+  </div>
+</div>
+
+<footer>
+  <div class="meta">
+    <p>This test page uses the following libraries:</p>
+
+    <li>ua-parser-js v0.7.3</li>
+    <li>jquery v2.1.1</li>
+    <li>browser-detector v0.1</li>
+  </div>
+</footer>
+
+<script src="/jquery.min.js"></script>
+<script src="/ua-parser.min.js"></script>
+<script src="/browser-detector.js"></script>
+<script src="/main.js"></script>
+</body>
+</html>
